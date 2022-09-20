@@ -1,18 +1,18 @@
-﻿using Ex1;
+﻿using Ex1_Method;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ex2
+namespace Ex1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
 
-            Console.WriteLine("LINQ Practice - Exercise 2");
+            Console.WriteLine("LINQ Practice - Exercise 1");
             Console.WriteLine("1. Method Syntax");
             Console.WriteLine("2. Query Syntax");
             Console.WriteLine("Any numbers that are not 1 and 2. Exit");

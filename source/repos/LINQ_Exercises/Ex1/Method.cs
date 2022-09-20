@@ -1,26 +1,17 @@
 ﻿using Ex1.Models;
 
-namespace Ex2
+namespace Ex1_Method
 {
     internal class Method
     {
         public static void Show()
         {
-            var Result1 = Class.Classes
-                .Select(c => new { c.Name, Count = Student.Students.Count(s => s.ClassId == c.Id) });
-            var Result2 = Class.Classes
-                .GroupJoin(Student.Students, c => c.Id, s => s.ClassId, (c, ss) => new { c.Name, Count = ss.Count() });
+            var MethodResult = Student.Students.Select(s => new {s.Id, s.ClassId});
 
-            Console.WriteLine("Solution 1");
-            foreach (var item in Result1)
+            Console.Write("Result: ");
+            foreach (var item in MethodResult)
             {
-                Console.WriteLine($"{item.Name}, {item.Count}");
-            }
-
-            Console.WriteLine("Solution 2");
-            foreach (var item in Result2)
-            {
-                Console.WriteLine($"{item.Name}, {item.Count}");
+                Console.WriteLine($"{item.Id}, {item.ClassId}");
             }
         }
     }
