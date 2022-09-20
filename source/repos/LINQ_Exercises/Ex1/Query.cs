@@ -11,14 +11,14 @@ namespace Ex1
     {
         public static void Show()
         {
-            var querySyntaxResult1 =
+            var Result1 =
                 from c in Class.Classes
                 select new
                 {
                     c.Name,
                     Count = Student.Students.Count(s => s.ClassId == c.Id)
                 };
-            var querySyntaxResult2 =
+            var Result2 =
                 from c in Class.Classes
                 join s in Student.Students
                 on c.Id equals s.ClassId into ss
@@ -29,13 +29,13 @@ namespace Ex1
                 };
 
             Console.WriteLine("Solution 1");
-            foreach (var item in querySyntaxResult1)
+            foreach (var item in Result1)
             {
                 Console.WriteLine($"{item.Name}, {item.Count}");
             }
 
             Console.WriteLine("Solution 2");
-            foreach (var item in querySyntaxResult2)
+            foreach (var item in Result2)
             {
                 Console.WriteLine($"{item.Name}, {item.Count}");
             }
