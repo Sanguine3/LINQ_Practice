@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ex2\Ex2.csproj" />
+    <ProjectReference Include="..\Ex3\Ex3.csproj" />
+    <ProjectReference Include="..\Ex4\Ex4.csproj" />
+    <ProjectReference Include="..\Ex5\Ex5.csproj" />
   </ItemGroup>
 
 </Project>
