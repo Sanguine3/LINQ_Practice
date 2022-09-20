@@ -15,7 +15,7 @@ namespace Ex1
                 from c in Class.Classes
                 select new
                 {
-                    c.Id,
+                    c.Name,
                     Count = Student.Students.Count(s => s.ClassId == c.Id)
                 };
             var Result2 =
@@ -24,25 +24,25 @@ namespace Ex1
                 on c.Id equals s.ClassId into ss
                 select new
                 {
-                    c.Id,
+                    c.Name,
                     Count = ss.Count()
                 };
 
-            Console.WriteLine("Solution 1");
+            Console.WriteLine("Solution 1: ");
             foreach (var item in Result1)
             {
                 if (item.Count > 0)
                 {
-                    Console.WriteLine($"{item.Id}, {item.Count}");
+                    Console.WriteLine($"{item.Name}, {item.Count}");
                 }
             }
 
-            Console.WriteLine("Solution 2");
+            Console.WriteLine("Solution 2: ");
             foreach (var item in Result2)
             {
                 if (item.Count > 0)
                 {
-                    Console.WriteLine($"{item.Id}, {item.Count}");
+                    Console.WriteLine($"{item.Name}, {item.Count}");
                 }
             }
         }

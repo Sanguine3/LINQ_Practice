@@ -11,13 +11,13 @@ namespace Ex2
             var Result2 = Class.Classes
                 .GroupJoin(Student.Students, c => c.Id, s => s.ClassId, (c, ss) => new { c.Name, Count = ss.Count() });
 
-            Console.WriteLine("Solution 1");
+            Console.WriteLine("Solution 1: ");
             foreach (var item in Result1)
             {
                 Console.WriteLine($"{item.Name}, {item.Count}");
             }
 
-            Console.WriteLine("Solution 2");
+            Console.WriteLine("Solution 2: ");
             foreach (var item in Result2)
             {
                 Console.WriteLine($"{item.Name}, {item.Count}");

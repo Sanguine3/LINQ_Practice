@@ -11,7 +11,7 @@ namespace Ex2
             var Result2 = Class.Classes
                 .GroupJoin(Student.Students, c => c.Id, s => s.ClassId, (c, stu) => new { c.Id, Count = stu.Count() });
 
-            Console.WriteLine("Solution 1");
+            Console.WriteLine("Solution 1: ");
             foreach (var item in Result1)
             {
                 if (item.Count > 0)
@@ -20,7 +20,7 @@ namespace Ex2
                 }
             }
 
-            Console.WriteLine("Solution 2");
+            Console.WriteLine("Solution 2: ");
             foreach (var item in Result2)
             {
                 if (item.Count > 0)

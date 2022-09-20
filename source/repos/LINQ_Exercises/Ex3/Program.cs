@@ -12,10 +12,10 @@ namespace Ex2
         static void Main(string[] args)
         {
 
-            Console.WriteLine("LINQ Practice - Exercise 3");
+            Console.WriteLine("LINQ Practice - Exercise 3\n");
             Console.WriteLine("1. Method Syntax");
             Console.WriteLine("2. Query Syntax");
-            Console.WriteLine("Any numbers that are not 1 and 2. Exit");
+            Console.WriteLine("Numbers that are neither 1 nor 2. Exit");
             Console.WriteLine("\nChoose an option: ");
             int choice = Convert.ToInt32(Console.ReadLine());
 

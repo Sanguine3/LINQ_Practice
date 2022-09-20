@@ -12,7 +12,7 @@ namespace Ex2
         static void Main(string[] args)
         {
 
-            Console.WriteLine("LINQ Practice - Exercise 4\n");
+            Console.WriteLine("LINQ Practice - Exercise 5\n");
             Console.WriteLine("1. Method Syntax");
             Console.WriteLine("2. Query Syntax");
             Console.WriteLine("Any numbers that are not 1 and 2. Exit");

@@ -28,13 +28,13 @@ namespace Ex1
                     Count = ss.Count()
                 };
 
-            Console.WriteLine("Solution 1");
+            Console.WriteLine("Solution 1:");
             foreach (var item in Result1)
             {
                 Console.WriteLine($"{item.Name}, {item.Count}");
             }
 
-            Console.WriteLine("Solution 2");
+            Console.WriteLine("Solution 2: ");
             foreach (var item in Result2)
             {
                 Console.WriteLine($"{item.Name}, {item.Count}");
