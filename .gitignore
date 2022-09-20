@@ -1,15 +1,8 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
 /XiaomiADBFastbootTools
 /Videos
 /source
 /Searches
 /Saved Games
-/RiderProjects
-/OneDrive - Đại học FPT- FPT University
-/OneDrive
 /ntuser.ini
 /NTUSER.DAT{a30c95be-385e-11ec-bff7-c489985c7596}.TMContainer00000000000000000002.regtrans-ms
 /NTUSER.DAT{a30c95be-385e-11ec-bff7-c489985c7596}.TMContainer00000000000000000001.regtrans-ms
@@ -17,13 +10,9 @@
 /ntuser.dat.LOG2
 /ntuser.dat.LOG1
 /NTUSER.DAT
-/ncc-net-basic
 /Music
 /Links
-/Katalon Studio
-/java
 /IntelGraphicsProfiles
-/IdeaProjects
 /hitman
 /Favorites
 /Downloads
@@ -32,12 +21,10 @@
 /Calibre Library
 /AppData
 /3D Objects
-/.vscode
 /.vivaldi_reporting_data
 /.VirtualBox
 /.templateengine
 /.swt
-/.sonar
 /.oracle_jre_usage
 /.openjfx
 /.nuget
@@ -51,8 +38,6 @@
 /.jmc
 /.gradle
 /.gitconfig
-/.eclipse
-/.dotnet
 /.config
 /.cache
 /.bash_history
