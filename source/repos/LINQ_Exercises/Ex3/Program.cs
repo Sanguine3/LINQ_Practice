@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ex2
+namespace Ex3
 {
     internal class Program
     {

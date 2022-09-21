@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ex1
+namespace Ex2
 {
-    class Query
+    public class Query
     {
-        public static void Show()
+        public void Show()
         {
             var Result1 =
                 from c in Class.Classes

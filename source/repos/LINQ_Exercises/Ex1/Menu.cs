@@ -1,4 +1,4 @@
-﻿using Ex1_Method;
+﻿using Ex1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,15 +12,12 @@ namespace Ex1
         public static void showMenu()
         {
 
-            Console.WriteLine("LINQ Practice - Exercise\n");
+            Console.WriteLine("[LINQ Practice - Exercise]\n");
             Console.WriteLine("1. Method Syntax");
             Console.WriteLine("2. Query Syntax");
             Console.WriteLine("Numbers that are neither 1 nor 2. Exit");
             Console.WriteLine("\nChoose an option: ");
             int choice = Convert.ToInt32(Console.ReadLine());
-
-            Method m = new Method();
-            Query q = new Query();
 
             while (choice == 1 || choice == 2)
             {

@@ -1,18 +1,19 @@
 ﻿using Ex1;
+using Ex2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ex2
+namespace Ex4
 {
     public class Menu
     {
         public static void showMenu()
         {
 
-            Console.WriteLine("LINQ Practice - Exercise\n");
+            Console.WriteLine("[LINQ Practice - Exercise]\n");
             Console.WriteLine("1. Method Syntax");
             Console.WriteLine("2. Query Syntax");
             Console.WriteLine("Numbers that are neither 1 nor 2. Exit");

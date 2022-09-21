@@ -1,6 +1,6 @@
 ﻿using Ex1.Models;
 
-namespace Ex2
+namespace Ex3
 {
     internal class Method
     {

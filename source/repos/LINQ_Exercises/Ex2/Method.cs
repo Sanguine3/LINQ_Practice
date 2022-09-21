@@ -2,9 +2,9 @@
 
 namespace Ex2
 {
-    internal class Method
+    public class Method
     {
-        public static void Show()
+        public void Show()
         {
             var Result1 = Class.Classes
                 .Select(c => new { c.Name, Count = Student.Students.Count(s => s.ClassId == c.Id) });

@@ -1,4 +1,5 @@
 ﻿using Ex1;
+using Ex2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace Ex2
 {
     public class Menu
     {
-        public static void showMenu()
+        public static void showMenu(Method m, Query q)
         {
 
-            Console.WriteLine("LINQ Practice - Exercise\n");
+            Console.WriteLine("[LINQ Practice - Exercise]\n");
             Console.WriteLine("1. Method Syntax");
             Console.WriteLine("2. Query Syntax");
             Console.WriteLine("Numbers that are neither 1 nor 2. Exit");
@@ -23,12 +24,12 @@ namespace Ex2
                 switch (choice)
                 {
                     case 1:
-                        Method.Show();
+                        m.Show();
                         Console.WriteLine("\nChoose an option: ");
                         choice = Convert.ToInt32(Console.ReadLine());
                         break;
                     case 2:
-                        Query.Show();
+                        q.Show();
                         Console.WriteLine("\nChoose an option: ");
                         choice = Convert.ToInt32(Console.ReadLine());
                         break;
@@ -41,4 +42,6 @@ namespace Ex2
             }
         }
     }
+
 }
+
