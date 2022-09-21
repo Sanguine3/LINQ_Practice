@@ -19,7 +19,6 @@ namespace Ex2
             Console.WriteLine("\nChoose an option: ");
             int choice = Convert.ToInt32(Console.ReadLine());
 
-
             while (choice == 1 || choice == 2)
             {
                 switch (choice)

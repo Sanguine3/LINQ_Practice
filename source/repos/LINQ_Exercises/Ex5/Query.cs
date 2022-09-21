@@ -16,7 +16,7 @@ namespace Ex1
                 select new
                 {
                     c.Name,
-                    Count = Student.Students.Count(s => s.ClassId == c.Id)
+                    first = Student.Students.FirstOrDefault(s => s.ClassId == c.Id)?.Name
                 };
             var Result2 =
                 from c in Class.Classes
@@ -25,25 +25,29 @@ namespace Ex1
                 select new
                 {
                     c.Name,
-                    Count = ss.Count()
+                    first = ss.FirstOrDefault(s => s.ClassId == c.Id)?.Name
                 };
 
             Console.WriteLine("Solution 1: ");
             foreach (var item in Result1)
             {
-                if (item.Count > 0)
+                if (item.first == null)
                 {
-                    Console.WriteLine($"{item.Name}, {item.Count}");
+                    Console.WriteLine($"{item.Name}, null");
                 }
+                else
+                    Console.WriteLine($"{item.Name}, {item.first}");
             }
 
             Console.WriteLine("Solution 2: ");
             foreach (var item in Result2)
             {
-                if (item.Count > 0)
+                if (item.first == null)
                 {
-                    Console.WriteLine($"{item.Name}, {item.Count}");
+                    Console.WriteLine($"{item.Name}, null");
                 }
+                else
+                    Console.WriteLine($"{item.Name}, {item.first}");
             }
         }
     }
